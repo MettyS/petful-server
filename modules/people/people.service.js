@@ -11,14 +11,21 @@ store.people.forEach(person => people.enqueue(person))
 
 module.exports = {
   get() {
+    return people.all();
     // Return all people in the queue.
   },
 
+  show() {
+    return people.show();
+  },
+
   enqueue(person) {
+    people.enqueue(person);
     // Add a person to the queue.
   },
 
   dequeue() {
+    return people.dequeue();
     // Remove a person from the queue.
   }
 }
