@@ -19,12 +19,17 @@ module.exports = {
     switch(animalType){
       case 'dog': return pets.dogs.show();
       case 'cat': return pets.cats.show();
-      default: return pets;
+      default: return [...pets.cats.all(), ...pets.dogs.all()];
     }
     // Return the pets next in line to be adopted.
   },
 
-  dequeue(type) {
+  dequeue(animalType) {
+    switch(animalType){
+      case 'dog': return pets.dogs.dequeue();
+      case 'cat': return pets.cats.dequeue();
+      default: return pets;
+    }
     // Remove a pet from the queue.
   }
 }

@@ -7,15 +7,23 @@ const People = require('../people/people.service')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  // Return all pets currently up for adoption.
+  res.status(200).json(Pets.get());
 })
 
 router.get('/cat', (req, res) => {
-
+  res.status(200).json(Pets.get('cat'));
 })
 
 router.get('/dog', (req, res) => {
-  
+  res.status(200).json(Pets.get('dog'));
+})
+
+router.delete('/cat', (req,res) => {
+  res.status(200).json(Pets.dequeue('cat'));
+})
+
+router.delete('/dog', (req,res) => {
+  res.status(200).json(Pets.dequeue('dog'));
 })
 
 router.delete('/', json, (req, res) => {
