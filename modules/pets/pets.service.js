@@ -15,7 +15,12 @@ store.dogs.forEach(dog => pets.dogs.enqueue(dog))
 // --------------------
 
 module.exports = {
-  get() {
+  get(animalType) {
+    switch(animalType){
+      case 'dog': return pets.dogs.show();
+      case 'cat': return pets.cats.show();
+      default: return pets;
+    }
     // Return the pets next in line to be adopted.
   },
 

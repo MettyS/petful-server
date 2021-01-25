@@ -10,6 +10,14 @@ router.get('/', (req, res) => {
   // Return all pets currently up for adoption.
 })
 
+router.get('/cat', (req, res) => {
+
+})
+
+router.get('/dog', (req, res) => {
+  
+})
+
 router.delete('/', json, (req, res) => {
   // Remove a pet from adoption.
 })
