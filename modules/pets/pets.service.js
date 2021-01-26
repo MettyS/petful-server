@@ -19,7 +19,7 @@ module.exports = {
     switch(animalType){
       case 'dog': return pets.dogs.show();
       case 'cat': return pets.cats.show();
-      default: return [...pets.cats.all(), ...pets.dogs.all()];
+      default: return {cats: pets.cats.all(), dogs: pets.dogs.all()};
     }
     // Return the pets next in line to be adopted.
   },
