@@ -1,5 +1,7 @@
 # Petful Server
 
+client | https://petful-client-f3kaigciz.vercel.app/ server | https://petful-metty.herokuapp.com/
+
 This project uses Node.js, Express, Queues. 
 
 To start a local copy, use 'npm start'
