@@ -15,4 +15,8 @@ app.use(
 app.use('/people', require('../people/people.router'))
 app.use('/pets', require('../pets/pets.router'))
 
+app.get('/', (req,res) => {
+  res.json('app is working!')
+})
+
 module.exports = app
