@@ -1,6 +1,6 @@
 # Petful Server
 
-client | https://petful-client-f3kaigciz.vercel.app/ server | https://petful-metty.herokuapp.com/
+client | https://petful-client-fmvoi84jf.vercel.app/ server | https://petful-metty.herokuapp.com/
 
 This project uses Node.js, Express, Queues. 
 
